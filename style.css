@@ -1,0 +1,523 @@
+:root {
+    --dark : #03254c;
+    --sea : #187bcd;
+    --color : #d0efff;
+    --hitam : #010101;
+    --orange : #ff8c00;
+    --putih : #fff; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    background-color: #010101;
+    color: #fff;
+    min-height: 10000px;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 7%;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-bottom: 1px solid #131313;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span{
+    color : var(--orange);
+}
+
+.navbar .navbar-nav a{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: #ff8c00;
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--orange);
+    transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.3);
+    transition: 0.2s linear;
+} 
+
+.navbar .navbar-extra a{
+    color: var(--putih);
+    padding: 0.2rem;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+button{
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 5px;
+    margin: 0 3px;
+    background-color: var(--orange);
+}
+
+button a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: 'Times New Roman';
+}
+
+button:hover {
+    background-color: rgb(135, 92, 11);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+button a:hover {
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+button:active {
+    background-color: rgb(135, 92, 11);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Navbar End */
+
+/* Halaman Utama Home */
+
+.container-home img{
+    margin: 0% 50px;
+    margin-top: 1%;
+    width: 25.5rem;
+    height: 25.5rem;
+    float: left;
+    display: flex;
+    border-radius: 3%;
+}
+
+.container-home .nama {
+    margin: 0% 60px;
+    margin-top: 9rem;
+    color: #fff;
+}
+
+.container-home .nama h1 {
+    max-width: 60rem;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+    line-height: 1.2;
+    font-family: 'Sofia Sans', serif;
+    font-weight: 800;
+    font-size: 5.5rem;
+    text-decoration: solid;
+    font-style: italic;
+}
+
+.gambar .nama h1 span {
+    color: var(--orange);
+}
+
+.container-home .nama p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    position: static;
+}
+
+.container-home .nama p span {
+    color: chocolate;
+}
+
+.container-home .nama .container-extra button{
+    margin-top: 2rem;
+    height: 3rem;
+}
+
+
+
+/* Home End */
+
+/* About */
+
+.container-about {
+    padding: 9rem 7% 1.4rem;
+}
+
+.container-about h2 {
+    font-size: 2.4rem;
+    text-align: left;
+    margin-bottom: 2rem
+}
+
+.container-about .gambar-about img{
+    float: right;
+    width: 25rem;
+    height: 25.3rem;
+    border-radius: 50%;
+}
+
+.container-about h3 {
+    color: rgba(255, 165, 0, 0.7);
+    font-size: 2rem;
+    padding: 1rem;
+    padding-left: 0%;
+}
+
+
+.container-about p {
+    width: 45rem;
+    font-size: 1.3rem;
+    padding: 0.6rem;
+    padding-left: 0%;
+}
+
+.container-about .isi{
+    padding-top: 1.5rem;
+}
+
+.container-about button {
+    width: 9rem;
+    height: 3.4rem;
+    cursor: pointer;
+    display: flexbox;
+    margin-top: 20px;
+}
+
+.container-about a{
+    font-size: 1.5rem;
+}
+
+.container-extra .list ul{
+    margin: 0% 1.7rem;
+    color: #000;
+    font-size: 1.3rem;
+    width: 20.6rem;
+    font-size: 1rem;
+}
+
+.container-extra .list h4 {
+    color: chocolate;
+    margin: 0% 5px;
+    font-size: 1.3rem;
+}
+
+.container-extra h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid #000;}
+
+.list {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.education {
+    background-color: #fff;
+    border-radius: 8%;
+    border: 5px orange;
+    box-shadow: 0 0 40px orange;
+}
+
+.education li {
+    font-size: 1.4rem;
+}
+
+.job li {
+    font-size: 1.6rem;
+    list-style-type: none;
+}
+
+.job {
+    background-color: #fff;
+    border-radius: 8%;
+    border: 5px orange;
+    box-shadow: 0 0 40px orange;
+}
+
+.skils {
+    background-color: #fff;
+    border-radius: 8%;
+    border: 5px orange;
+    box-shadow: 0 0 40px orange;
+}
+
+.skils li {
+    margin: 0% 17px;
+}
+
+/* About End */
+
+
+/* Project */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 10px;
+    color: #fff;
+}
+
+.header p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.project-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project2-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 4rem;
+}
+
+.image-section, .text-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--orange);
+}
+
+.satu {
+    color: rgb(185, 141, 39)
+}
+
+.dua {
+    color: green;
+}
+
+.text-section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta a {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cta a:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Project End */
+
+
+/* Contact Start */
+
+.container-contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header-contact {
+    padding: 60px 20px;
+}
+
+.header-contact h1 {
+    font-size: 2rem;
+    margin: 10px;
+    color: #fff;
+}
+
+/* Contact End */
+
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+/* Tabler */
+@media (max-width: 768px) {
+    html {
+        font-size: 66.5%;
+    }
+
+    /* Navbar */
+
+    #hamburger-menu{
+        display: inline-block;
+        color: #fff;
+    }
+
+    #hamburger-menu:hover{
+        color: var(--orange);
+    }
+
+    #sigin {
+        font-size: 1.6rem;
+    }
+
+    #login {
+        font-size: 1.6rem;
+    }
+
+    .navbar .navbar-extra a{
+        padding: 9px;
+        color: #fff;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 30rem;
+        height: 100vh;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0%;
+    }
+
+    .navbar .navbar-nav a{
+        color: #010101;
+        display: block;
+        margin: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-nav a:hover{
+        color: var(--orange);
+    }
+
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after{
+        transform: scaleX(0.2);
+    }
+
+    /* Navabr End */
+
+
+    /* Home */
+
+    
+    .container-home img {
+        margin: 9rem;
+        margin-bottom: 3px;
+        border-radius: 50%;
+        float: none;
+    }
+
+    /* Home End */
+
+
+    /* About */
+
+    .container-about .gambar-about img {
+        border-radius: 10px;
+    }
+
+    .container-about .list{
+        width: 30%;
+    }
+    /* About End */
+}
+
+/* Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
