@@ -196,6 +196,11 @@ button:active {
     border-radius: 50%;
 }
 
+.conrainer-about .gambar-about img:hover{
+    width: 26rem;
+    height: 27rem;
+}
+
 .container-about h3 {
     color: rgba(255, 165, 0, 0.7);
     font-size: 2rem;
@@ -256,8 +261,7 @@ button:active {
 .education {
     background-color: #fff;
     border-radius: 8%;
-    border: 5px orange;
-    box-shadow: 0 0 40px orange;
+    border: 5px bold orange;
 }
 
 .education li {
@@ -272,15 +276,13 @@ button:active {
 .job {
     background-color: #fff;
     border-radius: 8%;
-    border: 5px orange;
-    box-shadow: 0 0 40px orange;
+    border: 5px bold orange;
 }
 
 .skils {
     background-color: #fff;
     border-radius: 8%;
-    border: 5px orange;
-    box-shadow: 0 0 40px orange;
+    border: 5px bold orange;
 }
 
 .skils li {
@@ -511,6 +513,47 @@ button:active {
 
     .container-about .list{
         width: 30%;
+    }
+
+    .list {
+        justify-content: center;
+        display: table;
+        padding-top: 10px;
+        margin: 10rem;
+    }
+
+    .education {
+        background-color: #fff;
+        border-radius: 5%;
+        border: 5px bold orange;
+        margin: 10px 3rem;
+    }
+    
+    .education li {
+        font-size: 1.4rem;
+    }
+    
+    .job li {
+        font-size: 1.6rem;
+        list-style-type: none;
+    }
+    
+    .job {
+        background-color: #fff;
+        border-radius: 5%;
+        border: 5px bold orange;
+        margin: 3rem;
+    }
+    
+    .skils {
+        background-color: #fff;
+        border-radius: 5%;
+        border: 5px bold orange;
+        margin: 3rem;
+    }
+    
+    .skils li {
+        margin: 0% 25px;
     }
     /* About End */
 }
