@@ -403,6 +403,22 @@ button a:hover {
     color: #fff;
 }
 
+.icons ul {
+    margin-top: 24rem;
+    color: #fff;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    background-color: #ff8c00;
+}
+
+.icons li {
+    font-size: 2rem;
+    background-color: #ff8c00;
+    text-align: center;
+    margin: 0.7rem;
+}
+
 /* Contact End */
 
 
