@@ -388,13 +388,61 @@ button a:hover {
 
 /* Contact Start */
 
+.slides{
+    padding-top: 1rem;
+    width: 100%;
+    position: relative;
+}
+
+.slides .slide{
+    display: none;
+}
+
+.slides .slide img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    padding-bottom: 1px;
+}
+
+.slides .navigation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slides .navigation .prev, .slides .navigation .next{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+.slides .navigation .prev:hover, .slides .navigation .next:hover{
+    background: rgba(0,0,0,1);
+}
+
+@keyframes fade {
+    from{opacity: 0.3}
+    to {opacity: 1}
+}
+  
+
 .container-contact {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5rem;
 }
 .header-contact {
-    padding: 60px 20px;
+    padding: 10px 20px;
 }
 
 .header-contact h1 {
@@ -403,8 +451,13 @@ button a:hover {
     color: #fff;
 }
 
+.icons {
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
 .icons ul {
-    margin-top: 24rem;
+    margin-top: 1rem;
     color: #fff;
     display: flex;
     list-style-type: none;
@@ -557,12 +610,12 @@ button a:hover {
     /* About */
     .list {
         display: block;
+        padding-left: 5rem;
     }
 
     /* End About */
 
-    .text-section {
-        display: none;
+    .project2-details {
         text-align: right;
         justify-content: right;
     }
