@@ -621,7 +621,12 @@ button a:hover {
         justify-content: right;
     }
 
-
+    /* Contact */
+    .icons button a{
+        font-size: 1rem;
+    }
+    /* End Contact */
+    
     /* End Project */
 }
 
