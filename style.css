@@ -361,6 +361,20 @@ button a:hover {
     border-radius: 5px;
     font-size: 0.9rem;
     color: #333;
+
+}
+.tags2 {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag2 {
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
 }
 
 .cta {
@@ -578,9 +592,6 @@ button a:hover {
         display: flexbox;
     }
 
-    .list {
-    }
-
     .list h3{
         text-align: left;
     }
@@ -599,10 +610,23 @@ button a:hover {
     }
 
     /* About End */
+
+    /* Project */
+    .project2-details {
+        text-align: right;
+        justify-content: right;
+    }
+
+    .tags2 {
+        justify-content: right;
+    }
+
+
+    /* End Project */
 }
 
 /* Phone */
-@media (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 767px) {
     html {
         font-size: 55%;
     }
@@ -615,8 +639,23 @@ button a:hover {
 
     /* End About */
 
+    /* Project */
     .project2-details {
         text-align: right;
         justify-content: right;
     }
+
+
+    /* End Project */
+
+    /* Contact */
+    .icons button a{
+        font-size: 1.1rem;
+    }
+    /* End Contact */
+
+/* Phone Landscape */
+@media (min-width: 320px) and (max-width: 767px){
+
+}
 }
